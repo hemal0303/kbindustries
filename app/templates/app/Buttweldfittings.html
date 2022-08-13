@@ -1,0 +1,269 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'Buttweldfittings.css' %}">
+    <title>Butt Weld Fitting</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'home_page' %}" style="color: white">Kb industries</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white"href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white"href="#">Best Deal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: white" href="#">Applications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"style="color: white" href="#">Our Team</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    {% if product_search %}
+                    <input value="{{ product_search}}"  class="form-control me-2 prod_search" name="product_search" placeholder="Search product" type="search" aria-label="Search">
+                    {% else %}
+                    <input class="form-control me-2 prod_search" name="product_search" placeholder="Search product" type="search" aria-label="Search">
+                    {% endif %}
+                    <button class="btn btn-outline-light" id="search_product" type="button">Search</button>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="description" id="prod_div">
+        {% for product in products %}
+        <div class="card mb-2" style="max-width: 1140px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{ product.featured_image.url }}" class="img-fluid rounded-start" alt="..." width="130%">
+
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <h6 class="card-text"> Mark Products:</h6>
+                        <p class="productinfo">{{ product.mark_type }}</p>
+
+
+                        <h6 class="card-text"> Mark Standards:</h6>
+
+                        <p class="productinfo">{{ product.standard }}
+                        <h6 class="card-text">Mark Schedule:</h6>
+                        <p class="productinfo">{{ product.schedule }}</p>
+                        <h6 class="card-text">Mark Sizes:</h6>
+                        <p class="productinfo">{{ product.size }}</p>
+
+                        <h6 class="card-text">Mark Materials:,</h6>
+                        <p class="productinfo">{{ product.material }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <footer class="bd-footer py-3 mt-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 link-dark" href="/"
+                        aria-label="Bootstrap">
+                        <!-- <img src="images/MECH.jpg" alt="logo" width="80" height="42"> -->
+                        <span class="fs-5">Kb industries</span>
+                    </a>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Officia, exercitationem!
+
+                        </li>
+                        <li class="mb-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, dolorum! Reiciendis
+                            autem sit alias, harum magni consequatur. Cumque quasi, ratione neque commodi
+                            cupiditate, earum vel possimus amet, quibusdam consequuntur aspernatur!
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#">Home</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Docs</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Products</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Blog</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Blog</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Blog</a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Products</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#">Butt Weld Fittings</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Socket Weld Fittings</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Flanges</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Bends</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Butt Weld Fittings</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Butt Weld Fittings</a>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <address class="col-6 col-lg-4 mb-3">
+                    <h5>Address :</h5>
+                    <p>
+                        Block No 123, Ravi Industrial Estate. Bileshwar Pura, P.O.Chhatral, Taluka:-Kalol
+                        (North
+                        Gujarat) Dist: Gandhinagar - 382729 Gujarat - India </p>
+                    <h5> Mobile :</h5>
+                    <p> + 91- 9978950098, + 91- 9825073368,
+                    <h5>Email Us :</h5>
+                    <p> sales@mechwellfittings.com</p>
+                    <h5>Website :</h5>
+                    <p>www.mechwellfittings.com</p>
+                    </p>
+                </address>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+<script>
+
+    function getProducts (){
+        var search_product = $(".prod_search").val();
+        var data = {'search_product': search_product}
+    
+    $.ajax({url: "{% url 'all_cats' %}",
+            method:"post",
+            data:data, 
+            success: function(result){
+            $("#prod_div").empty();
+            // document.body.appendChild(image);
+            let ProductWrapper = document.getElementById("prod_div")
+            var result_list = result
+            console.log("result_list",result_list)
+            for (let i=0; i<result_list.length; i++){
+                let product = result_list[i]
+                console.log("product",product);
+                var productCard = `
+                <div class="card mb-2" style="max-width: 1140px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/images/${product.image}" class="img-fluid rounded-start" alt="..." width="130%">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">${product.name}</h5>
+                                <h6 class="card-text"> Mark Products:</h6>
+                                <p class="productinfo">${product.mark_type}</p>
+                                <h6 class="card-text"> Mark Standards:</h6>
+                                <p class="productinfo">${ product.standard }}</p>
+                                <h6 class="card-text">Mark Schedule:</h6>
+                                <p class="productinfo">${ product.schedule }}</p>
+                                <h6 class="card-text">Mark Sizes:</h6>
+                                <p class="productinfo">${ product.size }</p>
+                                <h6 class="card-text">Mark Materials:,</h6>
+                                <p class="productinfo">${ product.material }</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> `
+            ProductWrapper.innerHTML += productCard            
+        }
+        if (result_list.length == 0){
+            var productCard = `
+                <div>
+                    <h3 style='color:orange; text-align:center; margin-top:25px;'>No Records Found.</h3>
+                </div> `
+            ProductWrapper.innerHTML += productCard
+        }
+  }});
+    }
+
+    $("#search_product").click(function (){
+        getProducts();
+    })
+
+    $(".prod_search").on('keypress', function (e) {
+    if (e.key === 'Enter') {
+        getProducts();
+    }
+});
+
+</script>
+
+</html>

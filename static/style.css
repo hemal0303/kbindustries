@@ -1,0 +1,96 @@
+.navbar-brand {
+  padding-right: 35px;
+  margin-left: 10px;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+.navbar {
+  background-color: #c04005f9;
+}
+
+.nav-link {
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.carousel {
+  background-image: url(images/Poster.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-item {
+  padding-bottom: 50px;
+}
+
+.carousel-inner {
+  color: rgba(255, 255, 255, 255);
+  font-size: large;
+  min-height: 450px;
+  padding-top: 55px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.carousel-inner h3 {
+  color: #76323f;
+}
+
+.row {
+  margin-top: 25px;
+  margin-bottom: 60px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.card .card-body {
+  box-shadow: 3px 3px 4px 5px #d7cec7;
+  margin-top: 10px;
+  border-radius: 7px;
+}
+
+.card .card-body h5 {
+  color: #1b1a1a;
+}
+
+.card .card-body p {
+  color: #565656;
+  text-decoration: none;
+}
+
+.card .card-body a {
+  background-color: #f25c17;
+  color: white;
+  border-radius: 13px;
+}
+
+footer {
+  background-color: #161616;
+  width: 100%;
+}
+
+span {
+  color: #f25c17;
+  font-weight: 700;
+}
+
+h5 {
+  color: #f25c17;
+}
+
+.list-unstyled .mb-2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.address {
+  color: white;
+  max-width: 100%;
+}

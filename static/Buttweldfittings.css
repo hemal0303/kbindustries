@@ -1,0 +1,50 @@
+.navbar-brand {
+  padding-right: 35px;
+  margin-left: 10px;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+.navbar {
+  background-color: #c04005f9;
+}
+
+.nav-link {
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+footer {
+  background-color: #161616;
+  width: 100%;
+}
+
+span {
+  color: #f25c17;
+  font-weight: 700;
+}
+
+h5 {
+  color: #f25c17;
+}
+
+.list-unstyled .mb-2 a {
+  text-decoration: none;
+  color: white;
+}
+
+address {
+  color: white;
+  max-width: 100%;
+}
+
+.card {
+  padding-top: 35px;
+  padding-left: 35px;
+  border: none;
+}
+.description .row {
+  padding-right: 27px;
+}

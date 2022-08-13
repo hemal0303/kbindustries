@@ -1,0 +1,246 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'Buttweldfittings.css' %}">
+    <title>Kb industries Fitting Soultions</title>
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="color: white;">Kb industries</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: white ;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" style="color: white;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" style="color: white ;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" style="color: white;">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" style="color: white;">Best Deal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" style="color: white;">Applications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" style="color: white;">Our Team</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit" style="color: white;">Search</button>
+                </form>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+    <!-- carousel bars  -->
+<!-- 
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <h2 style="color: #ff5e14;">About Us</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus nesciunt ab ipsam! Odit
+                    maxime
+                    optio, tempore itaque cum hic commodi! Distinctio, dolores sequi. Iste, quis a. Assumenda
+                    maiores
+                    soluta animi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae aliquid itaque
+                    fuga, vel inventore reprehenderit rerum voluptate minima est quisquam odio eius? Cupiditate,
+                    placeat? Veritatis beatae ducimus nisi quo voluptates? Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="carousel-item">
+                <h2 style="color:#ff5e14 ;">Services we do!</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus nesciunt ab ipsam! Odit
+                    maxime
+                    optio, tempore itaque cum hic commodi! Distinctio, dolores sequi. Iste, quis a. Assumenda
+                    maiores
+                    soluta animi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae aliquid itaque
+                    fuga, vel inventore reprehenderit rerum voluptate minima est quisquam odio eius? Cupiditate,
+                    placeat? Veritatis beatae ducimus nisi quo voluptates? Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="carousel-item">
+                <h2 style="color:#ff5e14 ;">Services we do!</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus nesciunt ab ipsam! Odit
+                    maxime
+                    optio, tempore itaque cum hic commodi! Distinctio, dolores sequi. Iste, quis a. Assumenda
+                    maiores
+                    soluta animi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae aliquid itaque
+                    fuga, vel inventore reprehenderit rerum voluptate minima est quisquam odio eius? Cupiditate,
+                    placeat? Veritatis beatae ducimus nisi quo voluptates? Lorem ipsum dolor sit amet.</p>
+            </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> -->
+
+    <!-- Product Information -->
+
+    {% block body%}
+
+
+    {% endblock %}
+
+
+
+
+
+    <footer class="bd-footer py-3 mt-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
+                        aria-label="Bootstrap">
+                        <span class="fs-5">Kb industries</span>
+                    </a>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Officia, exercitationem!
+
+                        </li>
+                        <li class="mb-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, dolorum! Reiciendis
+                            autem sit alias, harum magni consequatur. Cumque quasi, ratione neque commodi
+                            cupiditate, earum vel possimus amet, quibusdam consequuntur aspernatur!
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#">Home</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Docs</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Products</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Blog</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Blog</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Blog</a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Products</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#">Butt Weld Fittings</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Socket Weld Fittings</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Flanges</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Bends</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Butt Weld Fittings</a>
+
+                        </li>
+                        <li class="mb-2">
+                            <a href="#">Butt Weld Fittings</a>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <address class="col-6 col-lg-4 mb-3">
+                    <div class="address">
+                        <h5>Address :</h5>
+
+                        <p>
+                            Block No 123, Ravi Industrial Estate. Bileshwar Pura, P.O.Chhatral, Taluka:-Kalol
+                            (North Gujarat) Dist: Gandhinagar - 382729 Gujarat - India
+                        </p>
+                    </div>
+                    <div class="address">
+                        <h5> Mobile :</h5>
+                        <p> + 91- 9978950098, + 91- 9825073368 </p>
+                    </div>
+                    <div class="address">
+                        <h5>Email Us :</h5>
+                        <p> sales@mechwellfittings.com</p>
+                    </div>
+                    <div class="address">
+                        <h5>Website :</h5>
+                        <p>www.mechwellfittings.com</p>
+                    </div>
+                </address>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
